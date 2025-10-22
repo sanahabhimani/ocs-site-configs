@@ -21,7 +21,7 @@ hosts:
        'instance-id': 'satcouplingoptics',
        'arguments': ['--ip', '10.120.1.6', # 10.139
                      '--configfile', '/Users/sanuma/git/ocs-site-configs/newconfig_EF.yaml',
-                     '--mode', 'acq']},
+                     '--mode', 'init']},
     ]
   }
 
