@@ -17,9 +17,9 @@ hosts:
     #       but this gives a good example of configuring an agent directly
     #       on the host
       'agent-instances': [
-      {'agent-class': 'GalilAxisControllerAgent',
+      {'agent-class': 'GalilAxisAgent',
        'instance-id': 'satcouplingoptics',
-       'arguments': ['--ip', '10.120.1.12', # 10.139
+       'arguments': ['--ip', '10.120.1.21', # 10.139
                      '--configfile', '/Users/sanuma/git/ocs-site-configs/newconfig_EF.yaml',
                      '--mode', 'acq']},
     ]
@@ -44,9 +44,9 @@ hosts:
     # }
 
          #'agent-instances': [
-        {'agent-class': 'GalilAxisControllerAgent',
+        {'agent-class': 'GalilAxisAgent',
         'instance-id': 'satcouplingoptics',
-        'arguments': ['--ip', '10.120.1.12', # 10.139
+        'arguments': ['--ip', '10.120.1.21', # 10.139
                       '--configfile', '/config/newconfig_EF.yaml',
                       '--mode', 'acq']},
         ]
