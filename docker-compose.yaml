@@ -51,8 +51,25 @@ services:
   # InfluxDB Publisher
   ocs-influx-publisher:
     image: simonsobs/ocs:latest
-    hostname: <hostname>-docker
+    hostname: PSD-KDHGVC639J-docker
     environment:
       - INSTANCE_ID=influxagent
     volumes:
       - ${OCS_CONFIG_DIR}:/config:ro
+
+
+  ocs-galil-agent:
+    image: ocs:latest #simonsobs/ocs:latest
+    platform: linux/amd64
+    hostname: PSD-KDHGVC639J-docker
+    volumes:
+      - ./:/config:ro
+    environment:
+      - INSTANCE_ID=satcouplingoptics
+      - LOGLEVEL=info
+      - INFLUX_HOST=influxdb
+      - INFLUX_PORT=8086
+      - INFLUX_DB=ocs_feeds
+      - INFLUX_USER=admin
+      - INFLUX_PASS=admin
+      - PUBLISH_TO_INFLUX=true

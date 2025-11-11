@@ -1,0 +1,35 @@
+galil:
+  motorsettings:
+    maxspeed: 100000
+  motorconfigparams:
+    A:              # linear axis
+      MT: '1' # motor type
+      OE: '0' # 
+      AG: '2'
+      TL: '5'
+      AU: '9'
+    B:              # linear axis
+      MT: '1'
+      OE: '0'
+      AG: '2'
+      TL: '5'
+      AU: '9'
+    C:              # angular axis
+      MT: '1'
+      OE: '0'
+      AG: '2'
+      TL: '5'
+      AU: '9'
+    D:              # angular axis
+      MT: '1'
+      OE: '0'
+      AG: '2'
+      TL: '5'
+      AU: '9'
+  initaxisparams:
+    BA: 'True'          # bare, command will run as BAA / BAB / BAC / BAD
+    BM: '3276.8'
+    BZ: '3'
+  hold_limits:
+    low: '<1000>'
+    high: '1500'
